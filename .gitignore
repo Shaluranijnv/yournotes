@@ -1,2 +1,7 @@
-node_modules
+
 .env
+node_modules/
+client/node_modules
+*.orig
+.idea/
+.vscode/
