@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-   
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "server": "nodemon server.js",
+    "client":"cd client && npm run start",
+    "client-install": "cd client && npm install",
+    "server-install":"npm install",
+    "install-all":"concurrently \"npm run client-install\" \"npm run server-install\" ",
+    "dev":" concurrently \"npm run client\" \"npm run server\" ",
+    "heroku-postbuild":"cd client && npm install && npm run build" 
 
   },
   "keywords": [],
