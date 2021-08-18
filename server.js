@@ -30,6 +30,7 @@ mongoose.connect(URI,{
 }, err=>{
     if(err) throw err;
     console.log("connected to mongoDB")
+    
 } )
 
 //Below MONGODB above Listen Server
